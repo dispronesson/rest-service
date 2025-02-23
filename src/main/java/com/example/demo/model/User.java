@@ -20,7 +20,7 @@ public class User {
         return name;
     }
 
-    public int getAge() {
+    public int getId() {
         return id;
     }
 
@@ -28,7 +28,7 @@ public class User {
         this.name = name;
     }
 
-    public void setAge(int age) {
+    public void setId(int age) {
         this.id = age;
     }
 }
