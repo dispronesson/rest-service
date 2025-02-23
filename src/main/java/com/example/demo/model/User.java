@@ -21,7 +21,7 @@ public class User {
         this.name = name;
     }
 
-    public void setId(int age) {
-        this.id = age;
+    public void setId(int id) {
+        this.id = id;
     }
 }
