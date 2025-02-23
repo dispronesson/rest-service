@@ -6,9 +6,9 @@ public class User {
 
     public User() {}
 
-    public User(String name, int age) {
+    public User(String name, int id) {
         this.name = name;
-        this.id = age;
+        this.id = id;
     }
 
     public User(String name, int age, int id) {
