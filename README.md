@@ -16,14 +16,14 @@
 
 В адресной строке введите `http://localhost:8080/user`. Без каких либо передаваемых параметров, приложение вернет объект в виде JSON файла с полями по умолчанию.
 
-![GET запрос без Query Parameter](/images/image1.png)
+![GET запрос без Query Parameter](https://imgur.com/EnOCfNb.png)
 
 Передавая в адресную строку Query Parameters, возвращается объект с указанными параметрами. Пример: `http://localhost:8080/user?name=Alex&id=2`.
 
-![GET запрос с Query Parameter](/images/image2.png)
+![GET запрос с Query Parameter](https://imgur.com/AcDZL89.png)
 
 ## GET ендпоинт с Path Parameters
 
 В адресной строке введите `http://localhost:8080/user/{id}`, где {id} - любое целое число. Приложение вернет объект с указанным id с именем по умолчанию.
 
-![GET запрос с Path Parameters](/images/image3.png)
+![GET запрос с Path Parameters](https://imgur.com/aCA2Zx3.png)
