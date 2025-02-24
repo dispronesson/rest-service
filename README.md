@@ -1,29 +1,29 @@
-# Простейший REST сервис
+# RESTful сервис
 
-Данный проект представляет простейший REST сервис, созданный с помощью Spring Boot. В проекте реализовано два GET ендпоинта с Query Parameters и Path Parameters.
+RESTful сервис - это веб-сервис, который следует архитектурному стилю REST. Он используется для взаимодействия между клиентами и серверами через HTTP.
+В данном проекте реализован простейший RESTful сервис с Query Parameters и Pathm Parameters, который показывает как обрабтываются GET запросы.
 
-## Установка
+## Технологии
 
-1. Установите Intellij IDEA Ultimate
+* **Язык программирования**: Java 17
+* **Фреймворк**: Spring Boot 3.x
+* **Сборка**: Maven
 
-2. Склонируйте репозиторий в `Git -> Clone...`
+## Установка и запуск
 
-3. Запустите проект
+### Требования
 
-Приложение будет доступно на `http://localhost:port` (по умолчанию, порт 8080).
+* Установленная Java 17+
+* Установленный Maven
 
-## GET ендпоинт с Query Parameters
+## SonarCloud
 
-В адресной строке введите `http://localhost:8080/user`. Без каких либо передаваемых параметров, приложение вернет объект в виде JSON файла с полями по умолчанию.
+[Sonar](https://sonarcloud.io/project/overview?id=dispronesson_rest-service)
 
-![GET запрос без Query Parameter](https://imgur.com/EnOCfNb.png)
+## Шаги для запуска
 
-Передавая в адресную строку Query Parameters, возвращается объект с указанными параметрами. Пример: `http://localhost:8080/user?name=Alex&id=2`.
-
-![GET запрос с Query Parameter](https://imgur.com/AcDZL89.png)
-
-## GET ендпоинт с Path Parameters
-
-В адресной строке введите `http://localhost:8080/user/{id}`, где {id} - любое целое число. Приложение вернет объект с указанным id с именем по умолчанию.
-
-![GET запрос с Path Parameters](https://imgur.com/aCA2Zx3.png)
+```bash
+git clone https://github.com/dispronesson/rest-service.git
+cd rest-service
+mvn clean install
+mvn spring-boot:run
