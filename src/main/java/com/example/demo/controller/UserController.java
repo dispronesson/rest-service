@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/users")
 public class UserController {
     private final UserService userService;
 
@@ -20,9 +20,8 @@ public class UserController {
     }
 
     @GetMapping
-    public User getUser(@RequestParam(defaultValue = "Undefined") String name,
-                        @RequestParam(defaultValue = "0") int id) {
-        return userService.getUser(name, id);
+    public User getUser(@RequestParam String name, @RequestParam String email) {
+        return userService.addUser(name, email);
     }
 
     @GetMapping("/{id}")
